@@ -1,9 +1,10 @@
 import '../../styles/app/Cart.css';
+import TopBar from "../common/TopBar";
 
 const Cart = () => {
     return (
-        <div>
-            <h1>Cart</h1>
+        <div className="Cart">
+            <TopBar />
         </div>
     );
 };
