@@ -1,7 +1,15 @@
+.Home {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
 .Home .Content {
     display: flex;
     flex-direction: column;
     padding: 2em;
+    background-color: bisque;
+    flex: 1 1 auto;
 }
 
 .Home .DescriptionArea {
