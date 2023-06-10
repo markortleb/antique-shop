@@ -1,0 +1,41 @@
+.TopBar {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    background-color: lightblue;
+    font-family: Corbel;
+}
+
+.TopBar .Headers {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.TopBar .Headers h1 {
+    font-size: 2em;
+}
+
+.TopBar .Headers h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.TopBar .Links {
+    display: flex;
+    gap: 3em;
+}
+
+.TopBar .Links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.TopBar .Links li {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
