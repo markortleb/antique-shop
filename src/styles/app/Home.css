@@ -1,0 +1,21 @@
+.Home .Content {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.Home .DescriptionArea {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.Home .DescriptionHeader {
+    font-size: 3em;
+}
+
+.Home .Description {
+    text-align: center;
+    line-height: 1.5em;
+}
