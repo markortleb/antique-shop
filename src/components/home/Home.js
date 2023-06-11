@@ -20,8 +20,17 @@ const Home = () => {
                   </span>
               </div>
               <ul className="ItemsForSale">
-
-
+                  {itemsForSale.map(item => {
+                      return (
+                          <li key={item.id}>
+                              <img src={item.image} alt=""/>
+                              <span className="ItemName">{item.name}</span>
+                              <span className="ItemDescription">{item.description}</span>
+                              <span className="ItemPrice">{item.price}</span>
+                              <button>Add to Cart</button>
+                          </li>
+                      )
+                  })}
               </ul>
           </div>
       </div>
