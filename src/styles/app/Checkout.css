@@ -1,0 +1,10 @@
+.Checkout {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.Checkout .Content {
+    background-color: bisque;
+    flex: 1 1 auto;
+}

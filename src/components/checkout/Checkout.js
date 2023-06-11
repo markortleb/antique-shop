@@ -5,6 +5,9 @@ const Checkout = () => {
     return (
         <div className='Checkout'>
             <TopBar />
+            <div className="Content">
+
+            </div>
         </div>
     );
 };

@@ -5,6 +5,9 @@ const Cart = () => {
     return (
         <div className="Cart">
             <TopBar />
+            <div className="Content">
+
+            </div>
         </div>
     );
 };

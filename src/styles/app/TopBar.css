@@ -39,3 +39,8 @@
     font-weight: bold;
 }
 
+
+.TopBar .Links li:hover {
+    color: #bba332;
+}
+
