@@ -27,3 +27,36 @@
     text-align: center;
     line-height: 1.5em;
 }
+
+.Home .ItemsForSale {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.Home .ItemsForSale li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.Home .ItemsForSale li img {
+    width: 40em;
+    height: 40em;
+}
+
+.Home .ItemsForSale li .ItemName {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.Home .ItemsForSale li button {
+    padding: 1em;
+    background-color: greenyellow;
+}
+
+.Home .ItemsForSale li button:hover {
+    background-color: #86d701;
+}
+

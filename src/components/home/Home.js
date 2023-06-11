@@ -29,7 +29,7 @@ const Home = () => {
                               <span className="ItemPrice">{item.price}</span>
                               <button>Add to Cart</button>
                           </li>
-                      )
+                      );
                   })}
               </ul>
           </div>
