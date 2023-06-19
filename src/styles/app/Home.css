@@ -2,7 +2,6 @@
     height: 100%;
     display: flex;
     flex-flow: column;
-    gap: 2em;
 }
 
 .Home .Content {
@@ -11,6 +10,7 @@
     padding: 2em;
     background-color: bisque;
     flex: 1 1 auto;
+    gap: 2em;
 }
 
 .Home .DescriptionArea {

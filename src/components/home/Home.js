@@ -2,9 +2,14 @@ import '../../styles/app/Home.css';
 import getItemsForSale from "../../util/getItemsForSale";
 import TopBar from "../common/TopBar";
 
-const Home = () => {
+const Home = (props) => {
 
     const itemsForSale = getItemsForSale();
+
+    const handleClick = (event, item) => {
+        console.log(props.cart);
+        props.addToCart(item);
+    };
 
     return (
       <div className='Home'>
@@ -21,13 +26,18 @@ const Home = () => {
               </div>
               <ul className="ItemsForSale">
                   {itemsForSale.map(item => {
+                      let formattedPrice = item.price.toLocaleString('en-US', {
+                          style: 'currency',
+                          currency: 'USD'
+                      });
+
                       return (
                           <li key={item.id}>
                               <img src={item.image} alt=""/>
                               <span className="ItemName">{item.name}</span>
                               <span className="ItemDescription">{item.description}</span>
-                              <span className="ItemPrice">{item.price}</span>
-                              <button>Add to Cart</button>
+                              <span className="ItemPrice">{formattedPrice}</span>
+                              <button onClick={event => handleClick(event, item)}>Add to Cart</button>
                           </li>
                       );
                   })}
