@@ -7,4 +7,24 @@
 .Cart .Content {
     background-color: bisque;
     flex: 1 1 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.Cart .Content .CartHeader {
+    font-size: 3em;
+}
+
+.Cart .Content .CartTable tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.Cart .Content .CartTable th, td {
+    border: 1px solid black;
+    padding: 1em;
 }

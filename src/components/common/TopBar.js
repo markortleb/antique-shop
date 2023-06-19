@@ -13,7 +13,6 @@ const TopBar = () => {
             <ul className='Links'>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/cart'>Cart</Link></li>
-                <li><Link to='/checkout'>Checkout</Link></li>
             </ul>
         </div>
     );

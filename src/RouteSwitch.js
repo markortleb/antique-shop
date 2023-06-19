@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import Cart from "./components/cart/Cart";
-import Checkout from "./components/checkout/Checkout";
 
 const RouteSwitch = () => {
     const [cart, setCart] = useState([]);
@@ -13,7 +12,7 @@ const RouteSwitch = () => {
             const index = cart.map(cartItem => cartItem.name).indexOf(item.name);
             cart[index].quantity += 1;
         } else {
-            item['quantity'] = 0;
+            item['quantity'] = 1;
             cart.push(item);
         }
 
@@ -27,7 +26,6 @@ const RouteSwitch = () => {
             <Routes>
                 <Route path="/" element={<Home cart={cart} addToCart={addToCart}/>} />
                 <Route path="/cart" element={<Cart cart={cart} />} />
-                <Route path="/checkout" element={<Checkout cart={cart} />} />
             </Routes>
         </BrowserRouter>
     );
